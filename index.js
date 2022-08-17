@@ -90,7 +90,9 @@ bot.command('after30', ctx => {
 
 
   const randomNumber = () => Math.floor(Math.random() * after30.length)
-  ctx.reply('<b>Правила после 30:</b></br> В своём возрасте я осознала и всячески стараюсь следовать следующему правилу: </br>' + after30[randomNumber])
+  ctx.reply(`Правила после 30:
+    В своём возрасте я осознала и всячески стараюсь следовать следующему правилу:
+    ${after30[randomNumber()]}`)
 })
 
 
