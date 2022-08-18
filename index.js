@@ -408,7 +408,7 @@ bot.on('text', ctx => {
   }
 
 
-  if (ctx.message.from.username === 'Erick_Sevens') {
+  if (ctx.message.from.username === 'artpan1302') {
     console.log('snenees');
     console.log(ctx.message)
     ctx.reply('@Erick_Sevens с днем рождения! 💙')
