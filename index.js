@@ -384,6 +384,11 @@ const obscene = [
 
 
 bot.on('text', ctx => {
+  if (ctx.message.from.username === 'artpan1302') {
+    console.log('snenees');
+    console.log(ctx.message)
+    ctx.reply('@Erick_Sevens с днем рождения! 💙')
+  }
   if (ctx.message.chat.title = 'Чат со столицей Шоково') {
     obscene.forEach(mat => {
       if (ctx.message.from.username === 'Uberpon4iK' && ctx.message.text.includes(mat)) {
@@ -408,11 +413,7 @@ bot.on('text', ctx => {
   }
 
 
-  if (ctx.message.from.username === 'artpan1302') {
-    console.log('snenees');
-    console.log(ctx.message)
-    ctx.reply('@Erick_Sevens с днем рождения! 💙')
-  }
+  
 })
 
 // для севенса
