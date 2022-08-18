@@ -384,7 +384,7 @@ const obscene = [
 
 
 bot.on('text', ctx => {
-  if (ctx.message.from.username === 'artpan1302') {
+  if (ctx.message.from.username === 'Erick_Sevens') {
     console.log('snenees');
     console.log(ctx.message)
     ctx.reply('@Erick_Sevens с днем рождения! 💙')
