@@ -120,7 +120,7 @@ bot.on('text', ctx => {
         ctx.reply(replyToDed[randomReply(0, replyToDed.length)])
       }
 
-      if (ctx.message.text.includes(mat)) ctx.reply('В целом, без мата можно обойтись')
+      if (ctx.message.text.includes(mat)) ctx.reply(`А можно без мата, ${ctx.message.from.first_name}?`)
       })
 
     
