@@ -69,7 +69,8 @@ bot.command('rule', ctx => {
   const rule = rules[randomNumber(rules)]
   console.log(ctx.message)
   ctx.reply(`${rule}
-    Спасибо, что не забываете! 💙`)
+    
+Спасибо, что не забываете! 💙`)
 })
 
 
@@ -92,8 +93,9 @@ bot.command('after30', ctx => {
 
   const randomNumber = () => Math.floor(Math.random() * after30.length)
   ctx.reply(`Правила после 30:
-    В своём возрасте я осознала и всячески стараюсь следовать следующему правилу:
-    ${after30[randomNumber()]}`)
+
+В своём возрасте я осознала и всячески стараюсь следовать следующему правилу:
+${after30[randomNumber()]}`)
 })
 
 
@@ -102,10 +104,12 @@ const obscene = [ 'архипиздрит', 'басран', 'бздение', '�
 ]
 
 
-bot.on('text', ctx => {
-  if (ctx.message.chat.title = 'Чат со столицей Шоково') {
+bot.on('message', ctx => {
+  console.log(ctx.message.text)
+  if (ctx.message.chat.title = 'chatBot') {
+    const message = ctx.message.text.toLowerCase()
     obscene.forEach(mat => {
-      if (ctx.message.from.username === 'Uberpon4iK' && ctx.message.text.toLowerCase().includes(mat)) {
+      if (ctx.message.from.username === 'Uberpon4iK' && message.includes(mat)) {
         const replyToDed = [
           'Умоляю тебя, дед, все кондеи мира не справятся с тобой, не душни.',
           'Прекращай, говорю же, Понч, так будет лучше для всех.',
