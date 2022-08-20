@@ -105,7 +105,7 @@ const obscene = [ 'архипиздрит', 'басран', 'бздение', '�
 bot.on('text', ctx => {
   if (ctx.message.chat.title = 'Чат со столицей Шоково') {
     obscene.forEach(mat => {
-      if (ctx.message.from.username === 'Uberpon4iK' && ctx.message.text.includes(mat)) {
+      if (ctx.message.from.username === 'Uberpon4iK' && ctx.message.text.toLowerCase().includes(mat)) {
         const replyToDed = [
           'Умоляю тебя, дед, все кондеи мира не справятся с тобой, не душни.',
           'Прекращай, говорю же, Понч, так будет лучше для всех.',
@@ -120,7 +120,7 @@ bot.on('text', ctx => {
         ctx.reply(replyToDed[randomReply(0, replyToDed.length)])
       }
 
-      if (ctx.message.text.includes(mat)) ctx.reply(`А можно без мата, ${ctx.message.from.first_name}?`)
+      if (ctx.message.text.toLowerCase().includes(mat)) ctx.reply(`А можно без мата, ${ctx.message.from.first_name}?`)
       })
 
     
