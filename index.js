@@ -104,34 +104,34 @@ const obscene = [ 'архипиздрит', 'басран', 'бздение', '�
 ]
 
 
-bot.on('message', ctx => {
-  console.log(ctx.message.text)
-  if (ctx.message.chat.title = 'chatBot') {
-    const message = ctx.message.text.toLowerCase()
-    obscene.forEach(mat => {
-      if (ctx.message.from.username === 'Uberpon4iK' && message.includes(mat)) {
-        const replyToDed = [
-          'Умоляю тебя, дед, все кондеи мира не справятся с тобой, не душни.',
-          'Прекращай, говорю же, Понч, так будет лучше для всех.',
-          'Не убивай нас духотой, родной дедушка.',
-          'Интересно, дед болеет за Челси или за наше удушение?',
-          'Ох и неугомонный же наш дедуля.',
-          'Мы поняли, бесполезно просить. Эх.',
-        ]
-        function randomReply(min, max) {
-          return Math.floor(Math.random() * (max - min) + min)
-        }
-        ctx.reply(replyToDed[randomReply(0, replyToDed.length)])
-      }
+// bot.on('message', ctx => {
+//   console.log(ctx.message)
+//   if (ctx.message.chat.title === 'chatBot') {
+//     const message = ctx.message.text.toLowerCase()
+//     obscene.forEach(mat => {
+//       if (ctx.message.from.username === 'Uberpon4iK' && message.includes(mat)) {
+//         const replyToDed = [
+//           'Умоляю тебя, дед, все кондеи мира не справятся с тобой, не душни.',
+//           'Прекращай, говорю же, Понч, так будет лучше для всех.',
+//           'Не убивай нас духотой, родной дедушка.',
+//           'Интересно, дед болеет за Челси или за наше удушение?',
+//           'Ох и неугомонный же наш дедуля.',
+//           'Мы поняли, бесполезно просить. Эх.',
+//         ]
+//         function randomReply(min, max) {
+//           return Math.floor(Math.random() * (max - min) + min)
+//         }
+//         ctx.reply(replyToDed[randomReply(0, replyToDed.length)])
+//       }
 
-      if (ctx.message.text.toLowerCase().includes(mat)) ctx.reply(`А можно без мата, ${ctx.message.from.first_name}?`)
-      })
+//       if (ctx.message.text.toLowerCase().includes(mat)) ctx.reply(`А можно без мата, ${ctx.message.from.first_name}?`)
+//       })
 
     
-  }
+//   }
 
   
-})
+// })
 
 // bot.on('sticker', (ctx) => {
 //   if (ctx.message.from.username === 'artpan1302') {
